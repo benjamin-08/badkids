@@ -1,0 +1,58 @@
+
+.userAva img {
+    width: 130px;
+    border-radius: 200px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    margin-bottom: 30px;
+}
+
+.userName {
+    font-family: 'Gotham Pro';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 16px;
+}
+
+.userStatus {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 16px;
+}
+
+.unfollowButton {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 700;
+    height: 34px;
+    width: 120px;
+    border-radius: 100px;
+    border: none;
+    background-color: #007c3f;
+    border: 2px solid #007c3f;
+    color: white;
+    cursor: pointer;
+    margin: 5px 16px;
+    padding: 0 20px;
+}
+
+.followButton {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 700;
+    height: 34px;
+    width: auto;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #007c3f;
+    color: #007c3f;
+    cursor: pointer;
+    margin: 5px 16px;
+    padding: 0 20px;
+}

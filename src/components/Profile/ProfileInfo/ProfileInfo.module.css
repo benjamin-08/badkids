@@ -1,0 +1,127 @@
+/* Profile Avatar */
+
+.profileAva {
+    border-radius: 300px;
+    width: 200px;
+    cursor: pointer;
+    transform: translateY(-100px);
+    border: 10px white solid;
+  }
+
+.changeAvaInput {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  background-color: #007c3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 400px;
+}
+
+/* Main */
+
+.profileWrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profileInfoInner {
+  padding: 0 50px 0 10px;
+  flex-grow: 5;
+}
+
+.profileName {
+  font-family: 'Gotham Pro';
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.profileStatus {
+  font-family: 'Gotham Pro';
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.editStatusButton {
+  width: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  opacity: 50%;
+}
+
+.editStatusInput {
+  width: 400px;
+  text-decoration: none;
+  font-family: 'Gotham Pro';
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border-bottom: 1px black solid;
+  padding: 0;
+}
+
+.contacts {
+  font-family: 'Gotham Pro';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contactRow {
+  margin: 10px 0;
+}
+
+.contactValue {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 5px;
+  color: #007c3f;
+  text-decoration: underline;
+}
+
+.editInfoButton {
+  font-family: 'Gotham Pro';
+  font-size: 20px;
+  font-weight: 700;
+  height: 54px;
+  width: 330px;
+  border-radius: 100px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.logoutButton {
+  font-family: 'Gotham Pro';
+  font-size: 20px;
+  font-weight: 700;
+  height: 54px;
+  width: 330px;
+  border-radius: 100px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  cursor: pointer;
+}

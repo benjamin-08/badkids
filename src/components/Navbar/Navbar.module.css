@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+.navItem {
+    display: block;
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.active {
+    display: block;
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    background-color: #007c3f;
+    padding: 10px 30px;
+    border-radius: 100px;
+    width: 150px;
+}

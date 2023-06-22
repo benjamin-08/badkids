@@ -1,25 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+// import UsersContainer from "./components/Users/UsersContainer";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import ProfileContainer from "./components/Profile/ProfileContainer";
+import UserProfileContainer from "./components/UserProfile/UserProfileContainer";
+import LoginContainer from "./components/Login/LoginContainer";
+import { connect } from "react-redux";
+import { initialize } from "./components/redux/authReducer";
+import Preloader from "./assets/Preloader";
+import React, { Suspense, lazy } from "react";
+import { Navigate } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const UsersContainer = lazy(() => import("./components/Users/UsersContainer"));
+
+class App extends React.Component {
+    componentDidMount() {
+        this.props.initialize();
+        // window.onerror = (event) => {
+        //     alert(event);
+        // };
+    }
+
+    render() {
+        if (!this.props.isInitialized) {
+            return <Preloader />;
+        }
+
+        return (
+            <Router>
+                <div className="app-wrapper-content">
+                    <Routes>
+                        <Route path="login" element={<LoginContainer />} />
+                        <Route path="/" element={<Navigate to="profile" />} />
+
+                        <Route
+                            path="profile"
+                            element={
+                                <>
+                                    <ProfileContainer />
+                                </>
+                            }
+                        />
+                        <Route
+                            path="dialogs/*"
+                            element={<DialogsContainer />}
+                        />
+                        <Route
+                            path="users"
+                            element={
+                                <Suspense fallback="loading">
+                                    <UsersContainer />
+                                </Suspense>
+                            }
+                        />
+                        <Route
+                            path="users/:userId?"
+                            element={<UserProfileContainer />}
+                        />
+                    </Routes>
+                </div>
+            </Router>
+        );
+    }
 }
 
-export default App;
+let mapStateToProps = (state) => {
+    return {
+        isInitialized: state.auth.isInitialized,
+    };
+};
+
+export default connect(mapStateToProps, { initialize })(App);
