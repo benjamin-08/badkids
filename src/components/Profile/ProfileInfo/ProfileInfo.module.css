@@ -14,22 +14,6 @@
   position: absolute;
 }
 
-/* Header */
-
-.header {
-  width: 100%;
-  background-color: #007c3f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0;
-  margin-bottom: 20px;
-}
-
-.header img {
-  width: 400px;
-}
-
 /* Main */
 
 .profileWrapper {

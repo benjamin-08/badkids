@@ -1,7 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import UsersContainer from "./components/Users/UsersContainer";
-import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import UserProfileContainer from "./components/UserProfile/UserProfileContainer";
 import LoginContainer from "./components/Login/LoginContainer";
@@ -10,6 +9,8 @@ import { initialize } from "./components/redux/authReducer";
 import Preloader from "./assets/Preloader";
 import React, { Suspense, lazy } from "react";
 import { Navigate } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 
 const UsersContainer = lazy(() => import("./components/Users/UsersContainer"));
 
@@ -27,12 +28,14 @@ class App extends React.Component {
         }
 
         return (
-            <Router>
-                <div className="app-wrapper-content">
+            <BrowserRouter>
+                <div className="app-wrapper">
                     <Routes>
                         <Route path="login" element={<LoginContainer />} />
                         <Route path="/" element={<Navigate to="profile" />} />
-
+                    </Routes>
+                    <Header />
+                    <Routes>
                         <Route
                             path="profile"
                             element={
@@ -40,10 +43,6 @@ class App extends React.Component {
                                     <ProfileContainer />
                                 </>
                             }
-                        />
-                        <Route
-                            path="dialogs/*"
-                            element={<DialogsContainer />}
                         />
                         <Route
                             path="users"
@@ -59,7 +58,7 @@ class App extends React.Component {
                         />
                     </Routes>
                 </div>
-            </Router>
+            </BrowserRouter>
         );
     }
 }

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import style from "./ProfileInfo.module.css";
 import EditProfileForm from "./EditProfileForm";
 import ProfileAva from "./ProfileAva";
-import Header from "../../Header/Header";
 import ProfileStatus from "./ProfileStatus";
 import ProfileContacts from "./ProfileContacts";
 import Nav from "../../Navbar/Navbar";
@@ -41,7 +40,6 @@ function ProfileInfo(props) {
 
     return (
         <div>
-            <Header />
             <div className={style.profileWrapper}>
                 <ProfileAva
                     ava={props.usersPage.userProfile.photos.large}

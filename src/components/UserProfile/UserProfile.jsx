@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./UserProfile.module.css";
-import Header from "../Header/Header";
 import avatar from "../../assets/images/ava-11.jpg";
 import ProfileContacts from "../Profile/ProfileInfo/ProfileContacts";
 import Nav from "../Navbar/Navbar";
@@ -8,7 +7,6 @@ import Nav from "../Navbar/Navbar";
 function UserProfile({ userProfile, userStatus }) {
     return (
         <>
-            <Header />
             {userProfile ? (
                 <div className={style.profileWrapper}>
                     <div>

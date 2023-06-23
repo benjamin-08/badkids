@@ -1,6 +1,11 @@
 a {
     text-decoration: none;
 }
+
+.navbar{
+    float: right;
+}
+
 .navItem {
     display: block;
     font-family: "Gotham Pro";

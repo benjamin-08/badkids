@@ -2,7 +2,6 @@ import style from "./Users.module.css";
 import React from "react";
 import Paginator from "./Paginator";
 import User from "./User";
-import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 
 function Users(props) {
@@ -17,7 +16,6 @@ function Users(props) {
 
     return (
         <div>
-            <Header />
             <div className={style.wrapper}>
                 <div>{users}</div>
 
