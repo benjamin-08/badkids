@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/badkids/static/css/main.96bd6a26.css",
-    "main.js": "/badkids/static/js/main.a73e50bf.js",
+    "main.js": "/badkids/static/js/main.b2bb6946.js",
     "static/css/870.6c1179ef.chunk.css": "/badkids/static/css/870.6c1179ef.chunk.css",
     "static/js/870.1c5646d9.chunk.js": "/badkids/static/js/870.1c5646d9.chunk.js",
     "static/js/787.85a40384.chunk.js": "/badkids/static/js/787.85a40384.chunk.js",
@@ -11,13 +11,13 @@
     "static/media/avatar-11.png": "/badkids/static/media/avatar-11.39534e54911246ad25d6.png",
     "index.html": "/badkids/index.html",
     "main.96bd6a26.css.map": "/badkids/static/css/main.96bd6a26.css.map",
-    "main.a73e50bf.js.map": "/badkids/static/js/main.a73e50bf.js.map",
+    "main.b2bb6946.js.map": "/badkids/static/js/main.b2bb6946.js.map",
     "870.6c1179ef.chunk.css.map": "/badkids/static/css/870.6c1179ef.chunk.css.map",
     "870.1c5646d9.chunk.js.map": "/badkids/static/js/870.1c5646d9.chunk.js.map",
     "787.85a40384.chunk.js.map": "/badkids/static/js/787.85a40384.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96bd6a26.css",
-    "static/js/main.a73e50bf.js"
+    "static/js/main.b2bb6946.js"
   ]
 }
