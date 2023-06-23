@@ -1,7 +1,7 @@
 import React from "react";
 
 function Preloader() {
-    return <div>Preloader</div>;
+    return <div>Loading</div>;
 }
 
 export default Preloader;
