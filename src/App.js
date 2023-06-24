@@ -33,13 +33,13 @@ class App extends React.Component {
                     <Route path="login" element={<LoginContainer />} />
                     <Route path="/" element={<Navigate to="profile" />} />
                 </Routes>
-                <Header />
                 <div className="app-wrapper">
                     <Routes>
                         <Route
                             path="profile"
                             element={
                                 <>
+                                    <Header />
                                     <ProfileContainer />
                                 </>
                             }
@@ -47,14 +47,22 @@ class App extends React.Component {
                         <Route
                             path="users"
                             element={
-                                <Suspense fallback="loading">
-                                    <UsersContainer />
-                                </Suspense>
+                                <>
+                                    <Header />
+                                    <Suspense fallback="loading">
+                                        <UsersContainer />
+                                    </Suspense>
+                                </>
                             }
                         />
                         <Route
                             path="users/:userId?"
-                            element={<UserProfileContainer />}
+                            element={
+                                <>
+                                    <Header />
+                                    <UserProfileContainer />
+                                </>
+                            }
                         />
                     </Routes>
                 </div>
