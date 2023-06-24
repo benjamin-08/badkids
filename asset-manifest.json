@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/badkids/static/css/main.96bd6a26.css",
-    "main.js": "/badkids/static/js/main.b2bb6946.js",
-    "static/css/870.6c1179ef.chunk.css": "/badkids/static/css/870.6c1179ef.chunk.css",
-    "static/js/870.1c5646d9.chunk.js": "/badkids/static/js/870.1c5646d9.chunk.js",
+    "main.css": "/badkids/static/css/main.a69c8f97.css",
+    "main.js": "/badkids/static/js/main.3e332f36.js",
+    "static/css/870.6287ee6d.chunk.css": "/badkids/static/css/870.6287ee6d.chunk.css",
+    "static/js/870.f3065178.chunk.js": "/badkids/static/js/870.f3065178.chunk.js",
     "static/js/787.85a40384.chunk.js": "/badkids/static/js/787.85a40384.chunk.js",
     "static/media/background-green-09.png": "/badkids/static/media/background-green-09.fec67ae0b25ade192897.png",
     "static/media/ava-11.jpg": "/badkids/static/media/ava-11.f6bdae78e60626fc84e3.jpg",
     "static/media/text-logo-10.png": "/badkids/static/media/text-logo-10.734917ce7a90a693101c.png",
     "static/media/avatar-11.png": "/badkids/static/media/avatar-11.39534e54911246ad25d6.png",
     "index.html": "/badkids/index.html",
-    "main.96bd6a26.css.map": "/badkids/static/css/main.96bd6a26.css.map",
-    "main.b2bb6946.js.map": "/badkids/static/js/main.b2bb6946.js.map",
-    "870.6c1179ef.chunk.css.map": "/badkids/static/css/870.6c1179ef.chunk.css.map",
-    "870.1c5646d9.chunk.js.map": "/badkids/static/js/870.1c5646d9.chunk.js.map",
+    "main.a69c8f97.css.map": "/badkids/static/css/main.a69c8f97.css.map",
+    "main.3e332f36.js.map": "/badkids/static/js/main.3e332f36.js.map",
+    "870.6287ee6d.chunk.css.map": "/badkids/static/css/870.6287ee6d.chunk.css.map",
+    "870.f3065178.chunk.js.map": "/badkids/static/js/870.f3065178.chunk.js.map",
     "787.85a40384.chunk.js.map": "/badkids/static/js/787.85a40384.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96bd6a26.css",
-    "static/js/main.b2bb6946.js"
+    "static/css/main.a69c8f97.css",
+    "static/js/main.3e332f36.js"
   ]
 }
