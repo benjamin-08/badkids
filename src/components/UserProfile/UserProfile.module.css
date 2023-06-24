@@ -1,15 +1,11 @@
 .userAva {
     border-radius: 300px;
     width: 200px;
-    transform: translateY(-90px);
+    transform: translateY(-100px);
     border: 10px white solid;
 }
 
 .profileWrapper {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     flex-direction: row;
   }

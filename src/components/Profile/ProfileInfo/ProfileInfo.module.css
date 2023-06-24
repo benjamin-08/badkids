@@ -17,10 +17,6 @@
 /* Main */
 
 .profileWrapper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   flex-direction: row;
 }

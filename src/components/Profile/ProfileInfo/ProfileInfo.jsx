@@ -39,45 +39,41 @@ function ProfileInfo(props) {
     };
 
     return (
-        <div>
-            <div className={style.profileWrapper}>
-                <ProfileAva
-                    ava={props.usersPage.userProfile.photos.large}
-                    onEditAva={onEditAva}
-                />
-                <div className={style.profileInfoInner}>
-                    {editInfoMode ? null : (
-                        <>
-                            <div className={style.profileName}>
-                                {props.usersPage.userProfile.fullName}
-                            </div>
-                            <ProfileStatus
-                                status={status}
-                                activateEditStatusMode={activateEditStatusMode}
-                                deactivateEditStatusMode={
-                                    deactivateEditStatusMode
-                                }
-                                editStatusMode={editStatusMode}
-                                updateStatus={updateStatus}
-                            />
-                        </>
-                    )}
-                    {editInfoMode ? (
-                        <EditProfileForm
-                            usersPage={props.usersPage}
-                            deactivateEditInfoMode={toggleEditInfoMode}
-                            updateProfile={props.updateProfile}
+        <div className={style.profileWrapper}>
+            <ProfileAva
+                ava={props.usersPage.userProfile.photos.large}
+                onEditAva={onEditAva}
+            />
+            <div className={style.profileInfoInner}>
+                {editInfoMode ? null : (
+                    <>
+                        <div className={style.profileName}>
+                            {props.usersPage.userProfile.fullName}
+                        </div>
+                        <ProfileStatus
+                            status={status}
+                            activateEditStatusMode={activateEditStatusMode}
+                            deactivateEditStatusMode={deactivateEditStatusMode}
+                            editStatusMode={editStatusMode}
+                            updateStatus={updateStatus}
                         />
-                    ) : (
-                        <ProfileContacts
-                            userProfile={props.usersPage.userProfile}
-                            toggleEditInfoMode={toggleEditInfoMode}
-                            myProfile={true}
-                        />
-                    )}
-                </div>
-                <Nav />
+                    </>
+                )}
+                {editInfoMode ? (
+                    <EditProfileForm
+                        usersPage={props.usersPage}
+                        deactivateEditInfoMode={toggleEditInfoMode}
+                        updateProfile={props.updateProfile}
+                    />
+                ) : (
+                    <ProfileContacts
+                        userProfile={props.usersPage.userProfile}
+                        toggleEditInfoMode={toggleEditInfoMode}
+                        myProfile={true}
+                    />
+                )}
             </div>
+            <Nav />
         </div>
     );
 }

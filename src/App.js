@@ -28,13 +28,13 @@ class App extends React.Component {
         }
 
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <Routes>
+                    <Route path="login" element={<LoginContainer />} />
+                    <Route path="/" element={<Navigate to="profile" />} />
+                </Routes>
+                <Header />
                 <div className="app-wrapper">
-                    <Routes>
-                        <Route path="login" element={<LoginContainer />} />
-                        <Route path="/" element={<Navigate to="profile" />} />
-                    </Routes>
-                    <Header />
                     <Routes>
                         <Route
                             path="profile"
